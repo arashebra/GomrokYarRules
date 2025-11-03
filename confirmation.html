@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تایمر شمارش معکوس</title>
+    <link rel="stylesheet" href="styles2.css" />
     <style>
       #timer {
         font-size: 24px;
@@ -12,12 +13,31 @@
     </style>
   </head>
   <body>
-    <h1>لطفاً صبر کنید...</h1>
-    <div id="timer">5</div>
-    <!-- نمایش تایمر -->
+    <div class="container">
+      <header>
+        <h1>تبریک!</h1>
+      </header>
+      <main>
+        <section>
+          <h2>پرداخت شما با موفقیت انجام شد.</h2>
+          <h2>لطفاً صبر کنید...</h2>
+          <div id="timer">20</div>
+          <!-- نمایش تایمر -->
+          <p>
+            از شما برای خریدتان متشکریم! ما خوشحالیم که شما را در میان کاربران
+            خود داریم.
+          </p>
+          <p>لطفاً به ایمیل خود مراجعه کنید تا جزئیات بیشتر را دریافت کنید.</p>
+          <p>شما به زودی به صفحه جدید منتقل خواهید شد...</p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2025 نام اپلیکیشن شما. تمام حقوق محفوظ است.</p>
+      </footer>
+    </div>
 
     <script>
-      let timeLeft = 5; // زمان شمارش معکوس (به ثانیه)
+      let timeLeft = 20; // زمان شمارش معکوس (به ثانیه)
       const timerElement = document.getElementById("timer");
 
       function countdown() {
@@ -31,7 +51,7 @@
       }
 
       function redirect() {
-        window.location.href = "https://www.google.com"; // آدرس جدید را اینجا قرار دهید
+        window.location.href = "https://example.com"; // آدرس جدید را اینجا قرار دهید
       }
 
       const timerInterval = setInterval(countdown, 1000); // هر ثانیه شمارش معکوس را بروزرسانی می‌کند
